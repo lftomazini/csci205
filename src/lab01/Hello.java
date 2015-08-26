@@ -20,8 +20,8 @@ public class Hello
  long startTime = System.nanoTime();
  
  System.out.println("Programming is not a spectator sport!");
- long estimatedTime = System.nanoTime() - startTime;
- System.out.println("Time to execute: " + estimatedTime + " ns");
+ //long estimatedTime = (System.nanoTime() - startTime)/1000000;
+ System.out.println("Time to execute: " + (double)((System.nanoTime() - startTime)/1000000.0) + " ms");
  System.exit(0);
  }
 }
