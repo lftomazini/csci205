@@ -1,18 +1,3 @@
-/* *****************************************
-* CSCI205 - Software Engineering and Design
-* Fall 2015
-* Instructor: Brian King
-* Section: 10am
-*
-* Name: Luis Felipe Franco Candeo Tomazini
-* Date: xx/xx/2015
-*
-* Lab / Assignment: Lab01
-*
-* Description:
-*
-* *****************************************/
-
 1.1 /home/accounts/student/l/lffct001
 1.2 The option -a does not ignore entries starting with .
 1.3 The option -l uses a long listing format
@@ -46,4 +31,4 @@ c) DISTRIBUTED VERSION CONTROL SYSTEM - This version control system is useful be
 
 2.5 Git addresses objects by the hash value of its content. It creates a string of 40 characters in a hexadecimal system, which is created accordingly to the content of a file or directory structure in the VCS.
 
-2.6 Git version control system has 3 states: commited, modified and staged. If a file is on the first state it is stored in the local database. The second one is for when there were cahnges to the file, but the user has not make a commit for that file yet. The last one means that the user has noted that a file was changed and will be uploaded on the next commit. 
+2.6 Git version control system has 3 states: commited, modified and staged. If a file is on the first state it is stored in the local database. The second one is for when there were cahnges to the file, but the user has not make a commit for that file yet. The last one means that the user has noted that a file was changed and will be uploaded on the next commit.
