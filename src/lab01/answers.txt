@@ -50,3 +50,8 @@ c) /** Documentaion comment */
 3.6 As soon as you have the file you need to go to the terminal and type:
 javac package-name/MyProgram.java //compiles with javac
 java package-name/MyProgram //runs with java
+
+4.1 The method println(String) behaves firstly invoking print(string) and then println().
+Prints a String and then terminate the line. This method behaves as though it invokes print(String) and then println().
+
+4.2 The standard object for input stream is in and its type is InputStream.
