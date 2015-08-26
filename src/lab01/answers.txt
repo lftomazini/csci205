@@ -59,3 +59,21 @@ Prints a String and then terminate the line. This method behaves as though it in
 5.1 The answer is 1 because there are two integer variables and the result of a division from two integers is an integer, as the value is truncated.
 
 5.2 The answer will 1.0. As mentioned above the value will be truncated and will be 1, when stored on a variable double the result will continue to be 1. To be 1.5 there should be a explicit cast to double.
+
+6.1 The args variable is a identifier. It is also an argument of type String array.During the execution of the program the elements of the array are initialized to command-line arguments.
+
+6.2 The void keyword represents that there is no return for that method.
+
+6.3 Identifiers are names used to represnt classes, variables and methods. It is not possible to use a reserved word as an identifier, such as static, long, package, and so on.
+
+6.4 A keyword is a reserved word of the programming language and cannot be used as a name for identifiers. Some examples are short, private, return, for, const and enum.
+
+6.5 Both the float and double can be used to represent a floating-point number. The variable float uses 4 bytes, while a double uses 8 bytes. Due to this a variable of the type double can store almost twice as much the number of significant digits than a float.
+
+6.6 The byte, short, int and long variables can store integer values. The difference between is the range of values they are capable of storing. A byte occupies 1 byte on the meory, a short 2 bytes, a int 4 bytes and a long 8 bytes.
+
+6.7 A string is not a primitive data type in Java. It is an array of characters and is a class in Java too.
+
+6.8 String name = "Luis Felipe Franco Candeo Tomazini";
+
+6.9 The scope of a variable can be understood as the lifetime of a variable. It might be global, meaning that it can be used in the whole program or local, just in some parts of it, such as in repetition loops or functions.
