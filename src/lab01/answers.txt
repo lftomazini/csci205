@@ -49,5 +49,4 @@ c) /** Documentaion comment */
 
 3.6 As soon as you have the file you need to go to the terminal and type:
 javac package-name/MyProgram.java //compiles with javac
-java package-name/MyProgram //rins with java
-
+java package-name/MyProgram //runs with java
