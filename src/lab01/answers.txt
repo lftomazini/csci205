@@ -1,18 +1,3 @@
-/* *****************************************
-* CSCI205 - Software Engineering and Design
-* Fall 2015
-* Instructor: Brian King
-* Section: 10am
-*
-* Name: Luis Felipe Franco Candeo Tomazini
-* Date: xx/xx/2015
-*
-* Lab / Assignment: Lab01
-*
-* Description:
-*
-* *****************************************/
-
 1.1 /home/accounts/student/l/lffct001
 1.2 The option -a does not ignore entries starting with .
 1.3 The option -l uses a long listing format
@@ -46,4 +31,23 @@ c) DISTRIBUTED VERSION CONTROL SYSTEM - This version control system is useful be
 
 2.5 Git addresses objects by the hash value of its content. It creates a string of 40 characters in a hexadecimal system, which is created accordingly to the content of a file or directory structure in the VCS.
 
-2.6 Git version control system has 3 states: commited, modified and staged. If a file is on the first state it is stored in the local database. The second one is for when there were cahnges to the file, but the user has not make a commit for that file yet. The last one means that the user has noted that a file was changed and will be uploaded on the next commit. 
+2.6 Git version control system has 3 states: commited, modified and staged. If a file is on the first state it is stored in the local database. The second one is for when there were cahnges to the file, but the user has not make a commit for that file yet. The last one means that the user has noted that a file was changed and will be uploaded on the next commit.
+
+3.1 Bytecodes is the machine language of the Java Virtual Machine. They are generated after compiling a plain text file with .java extension into a .class file by the javac compiler.
+
+3.2 One benefit of developing a system to run on a virtual machine is that it can be runned on many different operating systems, such as Linux, Windows and Mac OS.
+
+3.3 One disadvantage of using a JVM is the execution speed. The programs will not be executed on the hardware, because they must be firstly processed by the interpreter.
+
+3.4 Most of the staments written are true. The Java programming language is very similar to C++, making it easier to learn for those who already know the latter. There are other languages that encourages more good coding practices than Java, such as Python. In my opinion, programs written in java are harder to read when compared to those written in C++. Java allows it to run the program on many platform as it is based on a JVM, feature that many programming languages does not have.
+
+3.5
+a) // One line comment
+b) /* Multi-line
+      comment */
+c) /** Documentaion comment */
+
+3.6 As soon as you have the file you need to go to the terminal and type:
+javac package-name/MyProgram.java //compiles with javac
+java package-name/MyProgram //rins with java
+
