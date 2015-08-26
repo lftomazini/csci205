@@ -55,3 +55,7 @@ java package-name/MyProgram //runs with java
 Prints a String and then terminate the line. This method behaves as though it invokes print(String) and then println().
 
 4.2 The standard object for input stream is in and its type is InputStream.
+
+5.1 The answer is 1 because there are two integer variables and the result of a division from two integers is an integer, as the value is truncated.
+
+5.2 The answer will 1.0. As mentioned above the value will be truncated and will be 1, when stored on a variable double the result will continue to be 1. To be 1.5 there should be a explicit cast to double.
