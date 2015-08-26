@@ -1,0 +1,49 @@
+/* *****************************************
+* CSCI205 - Software Engineering and Design
+* Fall 2015
+* Instructor: Brian King
+* Section: 10am
+*
+* Name: Luis Felipe Franco Candeo Tomazini
+* Date: xx/xx/2015
+*
+* Lab / Assignment: Lab01
+*
+* Description:
+*
+* *****************************************/
+
+1.1 /home/accounts/student/l/lffct001
+1.2 The option -a does not ignore entries starting with .
+1.3 The option -l uses a long listing format
+1.4 The option -t sorts the output of listing all files by the modifiction time with the most recent listed first
+1.5 The option -r should be used to sort the output in the reverse order
+1.6 The option -S should be used to sort by file size
+1.7	csci205:
+	total 4
+	drwx--x--x 3 lffct001 student 4096 Aug 25 20:47 src
+
+	csci205/src:
+	total 4
+	drwx--x--x 2 lffct001 student 4096 Aug 25 21:08 lab01
+
+	csci205/src/lab01:
+	total 8
+	-rw------- 1 lffct001 student 382 Aug 25 21:08 answers.txt
+	-rw------- 1 lffct001 student 382 Aug 25 21:08 answers.txt~
+
+
+2.1 A version control system is a system that keeps track of all the modifications made to a file (or group of files) over time, having the ability to recover previous versions of them.
+
+2.2 The three types of versions control systems are:
+a) LOCAL VERSION CONTROL SYSTEM - This version control system is useful for people who are working alone in a small project, because it is simple to control the versions by this way.
+b) CENTRALIZED VERSION CONTROL SYSTEM - This version control system is useful when people need to work with developers on other systems.
+c) DISTRIBUTED VERSION CONTROL SYSTEM - This version control system is useful because people do not need to find the latest version of a file, they just upload the full project again. Also, any of the client repositories can be copied to the server as a back up, in the case that a server dies. It is good to use this option when collaborating with other people on a project simultaneously.
+
+2.3 Git uses the Distributed Version Control System
+
+2.4 Most operations are performed locally on Git because it does not need to check another computer on the network for the files.Firstly, in the case that you need to browse the history of the project, Git does not need to search on the server for the files, because it reads from the local database. This saves a lot of time compared to other VCSs. Secondly, you can do most of the operation while offline. You can still edit the files and also make new commits.
+
+2.5 Git addresses objects by the hash value of its content. It creates a string of 40 characters in a hexadecimal system, which is created accordingly to the content of a file or directory structure in the VCS.
+
+2.6 Git version control system has 3 states: commited, modified and staged. If a file is on the first state it is stored in the local database. The second one is for when there were cahnges to the file, but the user has not make a commit for that file yet. The last one means that the user has noted that a file was changed and will be uploaded on the next commit. 
