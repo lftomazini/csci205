@@ -56,7 +56,7 @@ public class FtoC {
 			Scanner userInput = new Scanner (System.in);
 			System.out.print("Try again? [y | n]: ");
 			option = userInput.next();
-		}while (option.equals("y"));
+		}while (option.equals("y")||option.equals("Y"));
 		System.out.println("Goodbye!");
 	}
 }
