@@ -27,21 +27,37 @@ import java.util.Scanner;
 public class FtoC {
 	public static void main(String[] args) {
 
-		
-		// Prompt user for a Fahrenheit temp
-		System.out.print("Enter a temperature in Fahrenheit: ");
+		String option;
+		do{
+			// Prompt user for a Fahrenheit temp
+			System.out.print("Enter a temperature in Fahrenheit: ");
 
-		// Create the Scanner object, attached to console input
-		Scanner in = new Scanner(System.in);
+			// Create the Scanner object, attached to console input
+			Scanner in = new Scanner(System.in);
 
-		// Read and store the Fahrenheit temp
-		float fahTemp = in.nextInt();
+			// Read and store the Fahrenheit temp
+			float fahTemp = in.nextInt();
 
-		// Convert the temp to Celsius
-		float celTemp = ((fahTemp - 32)*5)/9;
+			// Convert the temp to Celsius
+			float celTemp = ((fahTemp - 32)*5)/9;
 
-		// Output the results with correct formatting
-		System.out.format(fahTemp + " F = %.1f C%n", celTemp);
+			// Output the results with correct formatting
+			System.out.format(fahTemp + " F = %.1f C%n", celTemp);
+
+			if (celTemp <= 0){
+				System.out.println("Brrr... it is FREEZING out!");
+			} else if (celTemp <= 15){
+					System.out.println("It's a bit cool out!");
+				} else if (celTemp <= 30){
+						System.out.println("It's comfortably warm!");
+					} else {
+						System.out.println("It's HOT! I need A/C!");
+					}
+			Scanner userInput = new Scanner (System.in);
+			System.out.print("Try again? [y | n]: ");
+			option = userInput.next();
+		}while (option.equals("y"));
+		System.out.println("Goodbye!");
 	}
 }
 
