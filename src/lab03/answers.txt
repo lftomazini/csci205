@@ -61,7 +61,7 @@ $ git log --oneline --decorate --all
 d8d01dc Init commit
 
 ##### Q7 #####
-
+It overflows at 50. The recursive method is computationally more expensive because after every call of the method, the same method is called twice. As a result, the number of methods exectued doubles (2^n) after every call of the method.  
 
 
 

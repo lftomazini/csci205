@@ -73,9 +73,12 @@ public class Fibonacci {
         System.out.println("What fibonacci number do you want?");
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-
+	long startTime = System.nanoTime();
         System.out.println("Recursive fib: " + recFib(n));
+	System.out.println("Time to execute: " + (double)((System.nanoTime() - startTime)/1000000.0) + " ms");
+	startTime = System.nanoTime();
         System.out.println("Non-recursive fib: " + nonRecFib(n));
+	System.out.println("Time to execute: " + (double)((System.nanoTime() - startTime)/1000000.0) + " ms");
     }
 
 }
