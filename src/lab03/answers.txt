@@ -63,10 +63,37 @@ d8d01dc Init commit
 ##### Q7 #####
 It overflows at 50. The recursive method is computationally more expensive because after every call of the method, the same method is called twice. As a result, the number of methods exectued doubles (2^n) after every call of the method.  
 
+Exercise 5
 
+#### 1.1 ####
+8
 
+#### 1.2 ####
+13
 
+#### 1.3 ####
+HelloCSCI 205
 
+#### 1.4 ####
+llo
+
+#### 1.5 ####
+true
+
+#### 1.6 ####
+2
+
+#### 1.7 ####
+7
+
+##### 1.8 ####
+HELLO
+
+#### 1.9 ####
+CSCI200
+
+#### 1.10 ####
+Part b) is more efficient, because it makes sure that a new string with name s is created, while part (a) simply assumes that there doesn't exist any string object with the same name. 
 
 
 
