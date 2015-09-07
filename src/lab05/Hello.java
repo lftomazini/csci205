@@ -38,7 +38,7 @@ public class Hello {
         System.out.print("Hello. What is your name? ");
         Scanner in = new Scanner(System.in);
         String name = in.next();
-        System.out.println(name + ", Becoming a dood programmer takes practice.");
+        System.out.println(name + ", Becoming a good programmer takes practice.");
 
         // Some simple code to test the debugger
         Random rand = new Random();
