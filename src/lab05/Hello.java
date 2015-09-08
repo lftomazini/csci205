@@ -41,8 +41,12 @@ public class Hello {
         System.out.println(Arrays.toString(x));
     }
 
+    /**
+     * Generates a random array
+     *
+     * @return the array with random numbers
+     */
     private static int[] getArrayOfRandomNums() {
-        // Some simple code to test the debugger
         Random rand = new Random();
         int[] x = new int[NUM_INT];
         for (int i = 0; i < NUM_INT; i++) {
@@ -51,6 +55,10 @@ public class Hello {
         return x;
     }
 
+    /**
+     * Displays some initial messages
+     *
+     */
     private static void greetUser() {
         System.out.print("Hello. What is your name? ");
         Scanner in = new Scanner(System.in);
