@@ -20,6 +20,18 @@ package lab08;
  * @author lffct001
  */
 public enum Coin {
-    NICKEL, DIME, QUARTER;
+
+    /**
+     *
+     */
+    NICKEL,
+    /**
+     *
+     */
+    DIME,
+    /**
+     *
+     */
+    QUARTER;
 
 }
