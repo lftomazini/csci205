@@ -24,7 +24,7 @@ public enum Coin {
     /**
      *
      */
-    NICKEL(0.05), DIME(0.10), QUARTER(0.25);
+    PENNY(0.01), NICKEL(0.05), DIME(0.10), QUARTER(0.25), DOLLAR(1.00);
 
     private double value;
 
