@@ -88,9 +88,9 @@ public class CoinCollection {
     public String toString() {
         String s = "";
         for (Coin coin : Coin.values()) {
-            s += coin + ": " + this.coinCount[coin.ordinal()] + " ";
+            s += coin + ": " + this.coinCount[coin.ordinal()] + "\n";
         }
-        s += "= $" + this.getTotal();
+        s += "TOTAL = $" + this.getTotal() + "\n";
         return s;
     }
 
