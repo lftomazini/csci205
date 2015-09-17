@@ -2,14 +2,14 @@
  * CSCI205 - Software Engineering and Design
  * Fall 2015
  *
- * Name: Luis Felipe Franco Candeo Tomazini
+ * Name: Luis Felipe Franco Candeo Tomazini & Anmol Singh
  * Date: Sep 16, 2015
  * Time: 8:24:41 PM
  *
  * Project: csci205
  * Package: lab08
  * File: Coin
- * Description:
+ * Description: Enumerated types
  *
  * ****************************************
  */
