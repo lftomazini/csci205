@@ -102,6 +102,8 @@ public class CoinCollection {
 
     /**
      * Main program - designed to test out the CoinCollection class
+     *
+     * @param args
      */
     public static void main(String args[]) {
         CoinCollection myCoins = new CoinCollection();
