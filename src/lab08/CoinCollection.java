@@ -17,11 +17,6 @@ package lab08;
 public class CoinCollection {
 
     /**
-     * An array to store the individual values of each coin
-     */
-    private static final double[] coinValues = {0.05, 0.10, 0.25};
-
-    /**
      * array of integers contains actual count of each coin type in the
      * collection
      */
@@ -82,19 +77,18 @@ public class CoinCollection {
      */
     public double getTotal() {
         double sum = 0;
-        for (int i = 0; i < Coin.values().length; i++) {
-            sum += (this.coinCount[i] * coinValues[i]);
+        for (Coin coin : Coin.values()) {
+            sum += coin.getValue() * this.coinCount[coin.ordinal()];
+            //(this.coinCount[i] * getValue);
         }
         return sum;
     }
 
     @Override
     public String toString() {
-        int i = 0;
         String s = "";
-        for (Coin c : Coin.values()) {
-            s += c + ": " + this.coinCount[i] + " ";
-            i++;
+        for (Coin coin : Coin.values()) {
+            s += coin + ": " + this.coinCount[coin.ordinal()] + " ";
         }
         s += "= $" + this.getTotal();
         return s;
