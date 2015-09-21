@@ -182,12 +182,11 @@ public class CashRegisterTest {
         instance.scanItem(0.55);
         instance.scanItem(1.27);
         instance.collectPayment(Money.DOLLAR, 2);
-        //assertThat(instance, is(not(instance_2)));
-        //assertFalse(instance.equals(instance_2));
+        assertFalse(instance.equals(instance_2));
         instance_2.scanItem(0.55);
         instance_2.scanItem(1.27);
         instance_2.collectPayment(Money.DOLLAR, 2);
-        //assertEquals(instance, instance_2);
+        assertEquals(instance, instance_2);
     }
 
 }
