@@ -28,15 +28,19 @@ import org.junit.Test;
 public class CashRegisterTest {
     static final double EPSILON = 1.0E-12;
 
+    CashRegister instance;
+
     public CashRegisterTest() {
     }
 
     @Before
     public void setUp() {
+        instance = new CashRegister();
     }
 
     @After
     public void tearDown() {
+        instance = null;
     }
 
     /**
@@ -45,7 +49,6 @@ public class CashRegisterTest {
     @Test
     public void testGetPurchaseCount() {
         System.out.println("getPurchaseCount");
-        CashRegister instance = new CashRegister();
         //Test the initiasl state = should have NO items
         assertEquals(0, instance.getPurchaseCount());
 
@@ -63,7 +66,6 @@ public class CashRegisterTest {
     @Test
     public void testGetListOfPurchases() {
         System.out.println("getListOfPurchases");
-        CashRegister instance = new CashRegister();
 
         //Now, set up a test of 2 items
         instance.scanItem(0.55);
@@ -84,7 +86,6 @@ public class CashRegisterTest {
     @Test
     public void testGetTransactionTotal() {
         System.out.println("getTransactionTotal");
-        CashRegister instance = new CashRegister();
         assertEquals(0, instance.getTransactionTotal(), EPSILON);
 
         //Now, set up a test of 2 items
@@ -101,7 +102,6 @@ public class CashRegisterTest {
     @Test
     public void testGetPaymentCollected() {
         System.out.println("getPaymentCollected");
-        CashRegister instance = new CashRegister();
         //Test the initiasl state = should have NO payment
         assertEquals(0, instance.getPaymentCollected(), EPSILON);
 
@@ -122,7 +122,6 @@ public class CashRegisterTest {
     @Test
     public void testGiveChange() throws Exception {
         System.out.println("giveChange");
-        CashRegister instance = new CashRegister();
 
         //Now, set up a test of 2 items and 3 payments
         instance.scanItem(0.55);
@@ -137,13 +136,11 @@ public class CashRegisterTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void testScanItemLowException() {
-        CashRegister instance = new CashRegister();
         instance.scanItem(-0.5);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testScanItemHighException() {
-        CashRegister instance = new CashRegister();
         instance.scanItem(1E6);
     }
 
@@ -154,7 +151,6 @@ public class CashRegisterTest {
     @Test(expected = IllegalArgumentException.class)
     public void testCollectPaymentException() {
         System.out.println("collectPaymentException");
-        CashRegister instance = new CashRegister();
 
         //Now, set up a test of 2 items and 3 payments
         instance.collectPayment(Money.QUARTER, -3);
@@ -163,7 +159,6 @@ public class CashRegisterTest {
     @Test(expected = ChangeException.class)
     public void testGiveChangeException() throws ChangeException {
         System.out.println("giveChangeException");
-        CashRegister instance = new CashRegister();
 
         //Now, set up a test of 2 items and 1 payment
         instance.scanItem(0.55);
