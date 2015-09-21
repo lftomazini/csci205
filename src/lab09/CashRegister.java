@@ -129,26 +129,19 @@ public class CashRegister {
         return change;
     }
 
-//    public static void main(String[] args) {
-//        CashRegister myRegister = new CashRegister();
-//        myRegister.scanItem(0.55);
-//        myRegister.scanItem(1.27);
-//        System.out.println("Purchases: " + myRegister.getListOfPurchases());
-//        System.out.println("Expected: [0.55, 1.27]");
-//        myRegister.collectPayment(Money.DOLLAR, 1);
-//        myRegister.collectPayment(Money.QUARTER, 3);
-//        myRegister.collectPayment(Money.NICKEL, 2);
-//        System.out.println("Payment made: " + myRegister.getPaymentCollected());
-//        System.out.println("Expected: 1.85");
-//
-//        try {
-//            double myChange = myRegister.giveChange();
-//            System.out.println("Change: " + myChange);
-//            System.out.println("Expected: 0.03");
-//        } catch (ChangeException changeException) {
-//            System.err.println(changeException.getMessage());
-//        }
-//
-//        //myRegister.scanItem(-0.50);
-//    }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (obj instanceof CashRegister) {
+            CashRegister other = (CashRegister) obj;
+            return (other.getTransactionTotal() == this.getTransactionTotal() && other.getPaymentCollected() == this.getPaymentCollected() && other.getListOfPurchases() == this.getListOfPurchases());
+        } else {
+            return false;
+        }
+        if (obj == this) {
+            return true;
+        }
+    }
 }
