@@ -1,7 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/* *****************************************
+ * CSCI205 - Software Engineering and Design
+ * Fall 2015
+ *
+ * Name: Luis Felipe Franco Candeo Tomazini
+ * Date: Oct 19, 2015
+ * Time: 2:00:34 PM
+ *
+ * Project: csci205
+ * Package: lab13
+ * File: TrafficLightViewer
+ * Description: Swing
+ *
+ * ****************************************
  */
 package lab13;
 
