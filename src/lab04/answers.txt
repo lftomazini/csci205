@@ -1,0 +1,114 @@
+/* *****************************************
+* CSCI205 - Software Engineering and Design
+* Fall 2015
+* Instructor: Brian King
+* Section: 10am
+*
+* Name: Anmol Singh
+* Date: 09/03/2015
+*
+* Lab / Assignment: 04
+*
+* Description: Arrays and switch
+*
+* *****************************************/
+
+### Q1 ###
+$ git log --decorate --oneline --all
+84f0ce4 (HEAD, myFeature, master) test2
+86b2bf9 test1
+f59d247 more work
+2479de7 Init commit
+
+$ git branch
+* master
+  myFeature
+
+### Q2 ###
+$ git log --decorate --oneline --all
+84f0ce4 (myFeature) test2
+86b2bf9 test1
+480790e (HEAD, master) more work
+2479de7 Init commit
+
+### Q3 ###
+$ git log --decorate --oneline --graph --all
+* b2740d1 (HEAD, bugFix) Fixed bug
+| * 84f0ce4 (myFeature) test2
+| * 86b2bf9 test1
+|/  
+* 480790e (master) more work
+* 2479de7 Init commit
+
+### Q4 ###
+$ git log --graph --decorate --oneline --all
+* b2740d1 (HEAD, master, bugFix) Fixed bug
+| * 84f0ce4 (myFeature) test2
+| * 86b2bf9 test1
+|/  
+* f59d247 more work
+* 2479de7 Init commit
+
+### Q5 ###
+public class Main {
+	public static void main (String args[]) {
+		System.out.println("Init commit");
+		System.out.println("more work");
+		System.out.println("Any change");
+<<<<<<< HEAD
+		System.out.println("Bug, fixed");
+=======
+		System.out.println("More change");
+>>>>>>> myFeature
+		}
+	}
+
+### Q6 ###
+
+$ git log --graph --all --oneline --decorate
+*   10073b1 (HEAD, master) Merged myFeature
+|\  
+| * 84f0ce4 (myFeature) test2
+| * 86b2bf9 test1
+* | b2740d1 Fixed bug
+|/  
+* f59d247 more work
+* 2479de7 Init commit
+
+### Exercise 3 ###
+
+Generating 10000 numbers...
+sd:        1.0079257693935517
+TIME:      2557.365 usec
+alt_sd:    1.007925769393547
+TIME:      419.693 usec
+alt_sd computed in 16.41% of the time of sd
+
+Generating 100000 numbers...
+sd:        1.0019224201109005
+TIME:      8691.51 usec
+alt_sd:    1.001922420110903
+TIME:      3137.52 usec
+alt_sd computed in 36.10% of the time of sd
+
+Generating 1000000 numbers...
+sd:        0.9999041903769513
+TIME:      36636.586 usec
+alt_sd:    0.9999041903769544
+TIME:      4437.541 usec
+alt_sd computed in 12.11% of the time of sd
+
+Generating 5000000 numbers...
+sd:        0.9998127372747425
+TIME:      170053.277 usec
+alt_sd:    0.9998127372747802
+TIME:      22415.435 usec
+alt_sd computed in 13.18% of the time of sd
+
+Method 1 has 2 for loops as in method 2 there is only one for loop. This difference in one loop shows a significant change in calculation time as this method is calculating for large sets of numbers.
+
+
+
+
+
+
